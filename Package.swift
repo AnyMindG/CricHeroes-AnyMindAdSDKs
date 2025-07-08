@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-// version 1.0.0
+// version 1.1.0
 
 let package = Package(
     name: "CricHeroes-AnyMindAdSDKs",
@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "AppLovinSDK", targets: ["AppLovinSDK"]),
         .library(name: "GoogleMobileAdsMediationAppLovin", targets: ["GoogleMobileAdsMediationAppLovin"]),
         .library(name: "UnityAds", targets: ["UnityAds"]),
-        .library(name: "GoogleMobileAdsMediationUnity", targets: ["GoogleMobileAdsMediationUnity"]),
+        .library(name: "UnityAdapter", targets: ["UnityAdapter"]),
         .library(name: "IASDKCore", targets: ["IASDKCore"]),
         .library(name: "GoogleMobileAdsMediationFyber", targets: ["GoogleMobileAdsMediationFyber"]),
         .library(name: "AnyManagerMediation", targets: ["AnyManagerMediation"]),
@@ -43,13 +43,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "UnityAds",
-            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.31.0/UnityAds.zip",
-            checksum: "f1bd1c52cb82c059657620d66640de681d865359c6fcf144ccc89a2657a75e58"
+            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.35.0/UnityAds-pm.zip",
+            checksum: "4fcbf14053ff9657b2a3d470fd483612a6c1bf5fabc8350658468374e9f85885"
         ),
         .binaryTarget(
-            name: "GoogleMobileAdsMediationUnity",
-            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.32.0/GoogleMobileAdsMediationUnity.zip",
-            checksum: "c487e04848bc6468f1509d30703c594d9046209566598c82b6f465dbda1884e3"
+            name: "UnityAdapter",
+            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.36.0/UnityAdapterpm.zip",
+            checksum: "c3bb337a5b3b4f7a68be378475a37f49b7f224ee37650ba8798a8a182ddd69bc"
         ),
         .binaryTarget(
             name: "AnyManagerMediation",
@@ -67,10 +67,6 @@ let package = Package(
             url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.6.0/GoogleMobileAdsMediationFyber.zip",
             checksum: "c1582495b37211471d9f7f5142d07d6a732eab7be61e826c39c532fd4b13ff1a"
         ),
-        
-        .testTarget(
-            name: "CricHeroes-AnyMindAdSDKsTests",
-            dependencies: ["CricHeroes-AnyMindAdSDKs"]
-        ),
+    
     ]
 )
