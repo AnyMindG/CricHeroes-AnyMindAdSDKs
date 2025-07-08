@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-// version 1.1.0
+// version 1.2.0
 
 let package = Package(
     name: "CricHeroes-AnyMindAdSDKs",
@@ -15,7 +15,7 @@ let package = Package(
         .library(name: "AppLovinSDK", targets: ["AppLovinSDK"]),
         .library(name: "GoogleMobileAdsMediationAppLovin", targets: ["GoogleMobileAdsMediationAppLovin"]),
         .library(name: "UnityAds", targets: ["UnityAds"]),
-        .library(name: "UnityAdapter", targets: ["UnityAdapter"]),
+        .library(name: "GADMediationAdapterUnity", targets: ["GADMediationAdapterUnity"]),
         .library(name: "IASDKCore", targets: ["IASDKCore"]),
         .library(name: "GoogleMobileAdsMediationFyber", targets: ["GoogleMobileAdsMediationFyber"]),
         .library(name: "AnyManagerMediation", targets: ["AnyManagerMediation"]),
@@ -47,8 +47,8 @@ let package = Package(
             checksum: "4fcbf14053ff9657b2a3d470fd483612a6c1bf5fabc8350658468374e9f85885"
         ),
         .binaryTarget(
-            name: "UnityAdapter",
-            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.36.0/UnityAdapterpm.zip",
+            name: "GADMediationAdapterUnity",
+            url: "https://github.com/AnyMindG/AllFrameworks/releases/download/10000.37.0/GADMediationAdapterUnity.zip",
             checksum: "c3bb337a5b3b4f7a68be378475a37f49b7f224ee37650ba8798a8a182ddd69bc"
         ),
         .binaryTarget(
